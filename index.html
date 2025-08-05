@@ -53,67 +53,67 @@
 				    <h3 class="major">Python Projects</h3>
 				
 				    <h3 class="major">01- Deep Fake Detection</h3>
-				    <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Deepfake Detection Workflow" style="width:100%;border-radius:10px;">
+				    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Deepfake_detection_method.png" alt="Deepfake Detection Architecture" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Used convolutional neural networks (CNNs) to detect fake video frames by identifying facial inconsistencies and unnatural blinking patterns.</li>
-				            <li>Leveraged LSTM layers to analyze temporal inconsistencies across video sequences.</li>
-				            <li>Trained on datasets like FaceForensics++ and DeepFake Detection Challenge (DFDC).</li>
-				            <li>Integrated OpenCV for face alignment and preprocessing.</li>
+				            <li>Used CNNs to detect facial inconsistencies in deepfake videos (unnatural blinking, lip sync, lighting).</li>
+				            <li>LSTM layers analyzed temporal anomalies across video frames.</li>
+				            <li>Trained on FaceForensics++ and DFDC datasets.</li>
+				            <li>Used MTCNN for face cropping and alignment.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> Keras, OpenCV, LSTM, TensorFlow, NumPy, Scikit-learn, FaceAlignment, MediaPipe.<br>
+				        <strong>Technologies Used:</strong> Keras, OpenCV, LSTM, MTCNN, TensorFlow, Scikit-learn.<br>
 				        <a href="https://github.com/yourusername/deepfake-detection" target="_blank">GitHub Repo</a>
 				    </p>
 				
 				    <h3 class="major">02- Gender Classification Using Handwriting</h3>
-				    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Handwriting Gender Classification" style="width:100%;border-radius:10px;">
+				    <img src="https://www.researchgate.net/publication/334423507/figure/fig1/AS:779515637673984@1562817218730/Sample-handwriting-images-for-male-and-female-writers.png" alt="Handwriting Samples Male vs Female" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Built a CNN model to classify gender based on handwriting features like slant, spacing, and pressure patterns.</li>
-				            <li>Applied data augmentation (rotation, shear, zoom) to improve generalization.</li>
-				            <li>Preprocessed images using edge detection and binarization.</li>
-				            <li>Evaluated using precision, recall, and confusion matrix on held-out test set.</li>
+				            <li>Classified gender from handwriting using CNN-based feature extraction.</li>
+				            <li>Features: slant, spacing, stroke pressure (simulated via pixel density).</li>
+				            <li>Data augmented with rotation, shear, and noise injection.</li>
+				            <li>Evaluated on a custom dataset of scanned handwritten notes.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> TensorFlow, Keras, PIL/Pillow, OpenCV, Matplotlib, Seaborn, Scikit-image.<br>
+				        <strong>Technologies Used:</strong> TensorFlow, Keras, PIL, OpenCV, Scikit-image, Matplotlib.<br>
 				        <a href="https://github.com/yourusername/handwriting-gender-classification" target="_blank">GitHub Repo</a>
 				    </p>
 				
 				    <h3 class="major">03- Chatbot using Transformers</h3>
-				    <img src="https://images.unsplash.com/photo-1677442135777-6c70c2ce4d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Chatbot" style="width:100%;border-radius:10px;">
+				    <img src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/transformers/tasks/chatbot_conversation.png" alt="Transformer Chatbot Conversation" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Implemented a conversational AI using HuggingFace Transformers with a fine-tuned GPT-2 model.</li>
-				            <li>Used attention masking to preserve context across long conversations.</li>
-				            <li>Fine-tuned on custom dialogue datasets for domain-specific responses.</li>
-				            <li>Deployed using Flask for API access.</li>
+				            <li>Fine-tuned GPT-2 on conversational datasets (Cornell Movie Dialog, DailyDialog).</li>
+				            <li>Used attention masking to preserve context in multi-turn chats.</li>
+				            <li>Added persona-based responses and safety filters.</li>
+				            <li>Deployed via Gradio for easy testing.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> HuggingFace Transformers, GPT-2, PyTorch, Tokenizers, Flask, NLTK, FastAPI.<br>
+				        <strong>Technologies Used:</strong> HuggingFace Transformers, GPT-2, PyTorch, Tokenizer, Gradio, Flask.<br>
 				        <a href="https://github.com/yourusername/gpt2-chatbot" target="_blank">GitHub Repo</a>
 				    </p>
 				
 				    <h3 class="major">04- Twitter Hate Speech Detector</h3>
-				    <img src="https://images.unsplash.com/photo-1605379399642-87a3a1a0b1d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Tweet Classifier" style="width:100%;border-radius:10px;">
+				    <img src="https://production-media.paperswithcode.com/methods/Screen_Shot_2020-05-29_at_9.06.03_PM.png" alt="BERT for Text Classification" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Built a binary classifier using BERT to flag hate speech and toxic language in tweets.</li>
-				            <li>Preprocessed text using NLTK for tokenization, stopword removal, and lemmatization.</li>
-				            <li>Used HuggingFace’s <code>transformers</code> library with <code>bert-base-uncased</code>.</li>
-				            <li>Evaluated model using F1-score due to class imbalance.</li>
+				            <li>Fine-tuned BERT for binary classification of hate speech in tweets.</li>
+				            <li>Preprocessed text using NLTK (stopwords, lemmatization).</li>
+				            <li>Used HuggingFace’s <code>bert-base-uncased</code> with a classification head.</li>
+				            <li>Evaluated on Kaggle’s “Hate Speech and Offensive Language” dataset.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> BERT, HuggingFace Transformers, NLTK, PyTorch, Pandas, Scikit-learn, Streamlit (for demo).<br>
+				        <strong>Technologies Used:</strong> BERT, HuggingFace, NLTK, PyTorch, Pandas, Sklearn.<br>
 				        <a href="https://github.com/yourusername/twitter-hate-speech-bert" target="_blank">GitHub Repo</a>
 				    </p>
 				
 				    <h3 class="major">05- Resume Parser</h3>
-				    <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Resume Parser" style="width:100%;border-radius:10px;">
+				    <img src="https://i.imgur.com/9ZUjYbN.png" alt="Resume Parsing with Spacy NER" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Created a parser to extract structured data (name, email, skills, experience, education) from PDF and DOCX resumes.</li>
-				            <li>Used Spacy for named entity recognition (NER) and custom rule-based matching.</li>
-				            <li>Leveraged PDFMiner for accurate text extraction from complex layouts.</li>
-				            <li>Supported multiple formats and languages.</li>
+				            <li>Extracted name, email, skills, experience, and education from resumes.</li>
+				            <li>Used Spacy for named entity recognition (NER) and rule-based matching.</li>
+				            <li>PDFMiner for text extraction from PDFs; python-docx for .docx.</li>
+				            <li>Exported results to JSON and CSV.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> Spacy, PDFMiner, python-docx, Regex, Pandas, Flask, NLP, BeautifulSoup (for HTML resumes).<br>
+				        <strong>Technologies Used:</strong> Spacy, PDFMiner, python-docx, Regex, Pandas, Flask.<br>
 				        <a href="https://github.com/yourusername/resume-parser" target="_blank">GitHub Repo</a>
 				    </p>
 				
@@ -121,67 +121,67 @@
 				    <h3 class="major">Django Projects</h3>
 				
 				    <h3 class="major">06- Learning Management System (LMS)</h3>
-				    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="LMS" style="width:100%;border-radius:10px;">
+				    <img src="https://demo.themelooks.net/preview/edumall-html/demo/images/screenshots/course-details-1.png" alt="LMS Dashboard" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Developed a full-featured LMS for course management, quizzes, progress tracking, and certifications.</li>
-				            <li>Used PostgreSQL for scalable and reliable data storage.</li>
-				            <li>Integrated Celery and Redis for handling background tasks like email notifications and report generation.</li>
-				            <li>Role-based access control for students, instructors, and admins.</li>
+				            <li>Full LMS with course enrollment, quizzes, progress tracking, and certificates.</li>
+				            <li>Role-based access: student, instructor, admin.</li>
+				            <li>PostgreSQL for DB; Celery + Redis for async tasks (emails, reports).</li>
+				            <li>Responsive UI with Bootstrap 5.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> Django, PostgreSQL, Celery, Redis, Django REST Framework, JWT, Bootstrap, HTML/CSS, Webpack.<br>
+				        <strong>Technologies Used:</strong> Django, PostgreSQL, Celery, Redis, DRF, Bootstrap.<br>
 				        <a href="https://github.com/yourusername/django-lms" target="_blank">GitHub Repo</a>
 				    </p>
 				
 				    <h3 class="major">07- Fake Article Detection</h3>
-				    <img src="https://images.unsplash.com/photo-1516321318422-0789e8c3282b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Fake News Detection" style="width:100%;border-radius:10px;">
+				    <img src="https://miro.medium.com/v2/resize:fit:1400/1*4a1A4Z6bJcxzY5W8pWzQ8g.png" alt="Fake News Detection Pipeline" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Designed an ML pipeline to detect fake news using TF-IDF vectorization and Logistic Regression.</li>
-				            <li>Trained on datasets like LIAR and FakeNewsNet.</li>
-				            <li>Built a Django frontend for real-time article classification.</li>
-				            <li>Added explainability using LIME to show which words influenced the prediction.</li>
+				            <li>Used TF-IDF + Logistic Regression to classify real vs fake news.</li>
+				            <li>Trained on LIAR and FakeNewsNet datasets.</li>
+				            <li>Added explainability with LIME to highlight suspicious phrases.</li>
+				            <li>Django frontend for article submission and results.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> Django, Scikit-learn, TF-IDF, Pandas, Numpy, NLTK, LIME, Pickle, Gunicorn.<br>
+				        <strong>Technologies Used:</strong> Django, Scikit-learn, TF-IDF, LIME, Pandas, Pickle.<br>
 				        <a href="https://github.com/yourusername/fake-article-detection" target="_blank">GitHub Repo</a>
 				    </p>
 				
 				    <h3 class="major">08- Audio Transcription System</h3>
-				    <img src="https://images.unsplash.com/photo-1558675075-8bea4f539e58?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Audio Transcription" style="width:100%;border-radius:10px;">
+				    <img src="https://openai.com/content/images/2023/02/whisper-transcribe-ui.png" alt="Whisper Audio Transcription UI" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Used OpenAI’s Whisper API for accurate multilingual audio-to-text transcription.</li>
-				            <li>Allowed users to upload .mp3, .wav, and .m4a files via a Django interface.</li>
-				            <li>Stored transcriptions in database and enabled search and export.</li>
-				            <li>Built REST API using Django REST Framework.</li>
+				            <li>Used OpenAI’s Whisper API for high-accuracy multilingual transcription.</li>
+				            <li>Uploaded audio files (mp3, wav) transcribed in real time.</li>
+				            <li>Django backend with DRF for API endpoints.</li>
+				            <li>Downloadable text and SRT (subtitles) formats.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> Django, Django REST Framework, Whisper API, Celery, AWS S3 (for storage), Pydub, CORS, PostgreSQL.<br>
+				        <strong>Technologies Used:</strong> Whisper API, Django, DRF, Pydub, AWS S3, Celery.<br>
 				        <a href="https://github.com/yourusername/django-audio-transcription" target="_blank">GitHub Repo</a>
 				    </p>
 				
 				    <h3 class="major">09- News Scraper with Keyword Analysis</h3>
-				    <img src="https://images.unsplash.com/photo-1618044733300-94727f865789?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="News Scraper" style="width:100%;border-radius:10px;">
+				    <img src="https://i.imgur.com/KeJZJQv.png" alt="Keyword Cloud from News Articles" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Built a scraper using Scrapy and BeautifulSoup to collect news from major outlets.</li>
-				            <li>Used YAKE for keyword extraction and WordCloud for visualization.</li>
-				            <li>Stored articles in a Django admin interface for review.</li>
+				            <li>Scraped news articles using Scrapy and BeautifulSoup.</li>
+				            <li>Extracted keywords using YAKE and visualized with WordCloud.</li>
+				            <li>Stored data in Django admin for review and export.</li>
 				            <li>Scheduled daily scrapes using Celery Beat.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> Django, Scrapy, BeautifulSoup, YAKE, WordCloud, Celery, Redis, Requests, Pandas, Cron.<br>
+				        <strong>Technologies Used:</strong> Django, Scrapy, YAKE, WordCloud, Requests, Pandas.<br>
 				        <a href="https://github.com/yourusername/news-scraper-keywords" target="_blank">GitHub Repo</a>
 				    </p>
 				
 				    <h3 class="major">10- Facebook Profile Extractor</h3>
-				    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Facebook Extractor" style="width:100%;border-radius:10px;">
+				    <img src="https://i.imgur.com/6uGt3vV.png" alt="Social Media Scraping Dashboard" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Extracted public profile data (name, bio, posts, likes) using Selenium and BeautifulSoup.</li>
-				            <li>Handled dynamic content loading and login bypass (for public profiles).</li>
-				            <li>Stored structured data in a Django-managed PostgreSQL database.</li>
-				            <li>Added export to CSV and JSON.</li>
+				            <li>Extracted public Facebook profile data using Selenium and BeautifulSoup.</li>
+				            <li>Handled dynamic content and infinite scroll.</li>
+				            <li>Stored data in PostgreSQL via Django ORM.</li>
+				            <li>Exported to CSV and JSON for analysis.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> Django, Selenium, BeautifulSoup, PostgreSQL, Pandas, Django Admin, ChromeDriver, Timeouts, Logging.<br>
+				        <strong>Technologies Used:</strong> Django, Selenium, BeautifulSoup, PostgreSQL, Pandas.<br>
 				        <a href="https://github.com/yourusername/facebook-profile-extractor" target="_blank">GitHub Repo</a>
 				    </p>
 				
@@ -189,67 +189,67 @@
 				    <h3 class="major">Laravel Projects</h3>
 				
 				    <h3 class="major">11- HRMS</h3>
-				    <img src="https://images.unsplash.com/photo-1552664730-d30f7c86125f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="HRMS" style="width:100%;border-radius:10px;">
+				    <img src="https://laravelarticle.com/wp-content/uploads/2022/08/laravel-hrms-dashboard.png" alt="HRMS Dashboard Laravel" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Full-featured HR management system for attendance, leave requests, payroll, and employee records.</li>
-				            <li>Used Laravel Passport for OAuth2-based API authentication.</li>
-				            <li>Integrated calendar views for leave tracking and shift scheduling.</li>
-				            <li>Role-based permissions for HR, managers, and employees.</li>
+				            <li>Attendance, payroll, leave tracking, and employee management.</li>
+				            <li>Laravel Passport for API authentication.</li>
+				            <li>Calendar integration for shift planning.</li>
+				            <li>Role-based permissions and audit logs.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> Laravel, Laravel Passport, MySQL, Vue.js, Bootstrap, FullCalendar, Spatie Permissions, PDF Merger.<br>
+				        <strong>Technologies Used:</strong> Laravel, Passport, MySQL, FullCalendar, Spatie Permissions.<br>
 				        <a href="https://github.com/yourusername/hrms-laravel" target="_blank">GitHub Repo</a>
 				    </p>
 				
 				    <h3 class="major">12- SEO Keyword Tool</h3>
-				    <img src="https://images.unsplash.com/photo-1551288059-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="SEO Tool" style="width:100%;border-radius:10px;">
+				    <img src="https://i.imgur.com/1Z4T0bY.png" alt="SEO Keyword Research Tool" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Tool to generate keyword suggestions using Google Suggest API and keyword clustering.</li>
-				            <li>Displayed search volume trends and competition levels.</li>
-				            <li>Provided on-page SEO tips and meta tag recommendations.</li>
-				            <li>Exportable reports in CSV and PDF.</li>
+				            <li>Generated keyword suggestions using Google Suggest API.</li>
+				            <li>Displayed search volume, competition, and CPC trends.</li>
+				            <li>On-page SEO recommendations and meta tag preview.</li>
+				            <li>Exportable CSV and PDF reports.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> Laravel, Google Suggest API, Guzzle, Chart.js, DomPDF, jQuery, Alpine.js, MySQL.<br>
+				        <strong>Technologies Used:</strong> Laravel, Google Suggest API, Chart.js, DomPDF, Guzzle.<br>
 				        <a href="https://github.com/yourusername/seo-keyword-tool" target="_blank">GitHub Repo</a>
 				    </p>
 				
 				    <h3 class="major">13- E-commerce Dashboard</h3>
-				    <img src="https://images.unsplash.com/photo-1551288059-f1fe52189963?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Ecommerce" style="width:100%;border-radius:10px;">
+				    <img src="https://themesbrand.com/velzon/html/default/assets/images/dashboards/ecommerce.png" alt="E-commerce Admin Dashboard" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Admin dashboard for managing products, orders, inventory, and customer analytics.</li>
-				            <li>Integrated Chart.js for real-time sales and traffic visualization.</li>
-				            <li>Role-based access for admins and managers.</li>
-				            <li>Export orders to Excel and generate invoices.</li>
+				            <li>Admin panel for managing products, orders, inventory, and customers.</li>
+				            <li>Real-time analytics with Chart.js and sales trends.</li>
+				            <li>Export orders to Excel using Laravel Excel.</li>
+				            <li>Role-based access control.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> Laravel, MySQL, Chart.js, Laravel Excel, Blade, Tailwind CSS, Livewire, Spatie Permissions.<br>
+				        <strong>Technologies Used:</strong> Laravel, MySQL, Chart.js, Laravel Excel, Livewire.<br>
 				        <a href="https://github.com/yourusername/laravel-ecommerce-dashboard" target="_blank">GitHub Repo</a>
 				    </p>
 				
 				    <h3 class="major">14- Ticket Support System</h3>
-				    <img src="https://images.unsplash.com/photo-1552664730-d876833333f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Ticket System" style="width:100%;border-radius:10px;">
+				    <img src="https://preview.themeforest.net/item/support-center-responsive-tickets-system/html/assets/images/screenshots/ticket-list.png?auto=compress%2Cformat&amp;fit=crop&amp;crop=top&amp;w=550&amp;h=310" alt="Ticket Support System Interface" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Support ticketing system with categories, priorities, and SLA tracking.</li>
-				            <li>Real-time notifications and chat using Pusher.</li>
-				            <li>Email alerts on ticket creation and replies.</li>
-				            <li>File attachments and internal notes.</li>
+				            <li>Ticket creation, assignment, status tracking, and SLA monitoring.</li>
+				            <li>Real-time chat and notifications via Pusher.</li>
+				            <li>Email alerts and file attachments.</li>
+				            <li>Admin dashboard with analytics.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> Laravel, Pusher, MySQL, Bootstrap, jQuery, Mailgun, Spatie Activitylog, Laravel Echo.<br>
+				        <strong>Technologies Used:</strong> Laravel, Pusher, MySQL, Bootstrap, Mailgun, Laravel Echo.<br>
 				        <a href="https://github.com/yourusername/laravel-ticket-system" target="_blank">GitHub Repo</a>
 				    </p>
 				
 				    <h3 class="major">15- Blog with Markdown Editor</h3>
-				    <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Laravel Blog" style="width:100%;border-radius:10px;">
+				    <img src="https://i.imgur.com/0v5VlLk.png" alt="Laravel Blog with Markdown Editor" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Full-featured blog with live Markdown-to-HTML preview.</li>
-				            <li>Tag management, comment moderation, and SEO-friendly URLs.</li>
+				            <li>Live Markdown-to-HTML preview editor.</li>
+				            <li>Tag management, comment moderation, SEO-friendly URLs.</li>
 				            <li>Rich text fallback using TinyMCE.</li>
-				            <li>Admin panel for managing posts and users.</li>
+				            <li>Admin panel for content management.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> Laravel, Markdown, TinyMCE, MySQL, Laravel Nova, Algolia (search), Disqus (comments), RSS.<br>
+				        <strong>Technologies Used:</strong> Laravel, Markdown, TinyMCE, MySQL, Algolia, RSS.<br>
 				        <a href="https://github.com/yourusername/laravel-blog-markdown" target="_blank">GitHub Repo</a>
 				    </p>
 				
@@ -257,67 +257,67 @@
 				    <h3 class="major">Agentic AI Projects</h3>
 				
 				    <h3 class="major">16- Face Regeneration Using Diffusion Models</h3>
-				    <img src="https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Face Regeneration" style="width:100%;border-radius:10px;">
+				    <img src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/diffusers/controlnet-inpaint.png" alt="Face Inpainting with Stable Diffusion" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Used Stable Diffusion and ControlNet to restore facial features from low-quality or masked images.</li>
-				            <li>Preserved identity using face embedding loss (e.g., ID loss with ArcFace).</li>
-				            <li>Built Gradio interface for easy testing and demo.</li>
-				            <li>Applied to forensics and archival photo restoration.</li>
+				            <li>Restored missing facial features using Stable Diffusion + ControlNet.</li>
+				            <li>Inpainting guided by edge maps and facial landmarks.</li>
+				            <li>Used Gradio for interactive demo.</li>
+				            <li>Applied in forensics and photo restoration.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> Stable Diffusion, ControlNet, Gradio, PyTorch, InsightFace, OpenCV, Diffusers (HuggingFace).<br>
+				        <strong>Technologies Used:</strong> Stable Diffusion, ControlNet, Gradio, Diffusers, OpenCV.<br>
 				        <a href="https://github.com/yourusername/face-regeneration-diffusion" target="_blank">GitHub Repo</a>
 				    </p>
 				
 				    <h3 class="major">17- Multi-Agent Task Planning</h3>
-				    <img src="https://images.unsplash.com/photo-1677442135192-2de4e5d16180?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Multi-Agent AI" style="width:100%;border-radius:10px;">
+				    <img src="https://i.imgur.com/8j0jKpT.png" alt="Multi-Agent AI Workflow" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Built a system where multiple AI agents collaborate using LangGraph and AutoGen.</li>
-				            <li>Agents handle research, summarization, code generation, and report writing.</li>
-				            <li>Orchestrated workflows with feedback loops and human-in-the-loop approval.</li>
-				            <li>Persistent memory using vector databases.</li>
+				            <li>Agents for research, writing, coding, and validation.</li>
+				            <li>Orchestrated using LangGraph and AutoGen.</li>
+				            <li>Human-in-the-loop approval and feedback.</li>
+				            <li>Persistent memory via vector databases.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> AutoGen, LangGraph, LangChain, OpenAI API, Chroma, FAISS, Redis, Docker.<br>
+				        <strong>Technologies Used:</strong> AutoGen, LangGraph, LangChain, OpenAI, Chroma, Docker.<br>
 				        <a href="https://github.com/yourusername/agentic-ai-task-manager" target="_blank">GitHub Repo</a>
 				    </p>
 				
 				    <h3 class="major">18- Self-Healing Chat Agent</h3>
-				    <img src="https://images.unsplash.com/photo-1677442135785-8d61c3b6c8b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="AutoAgent" style="width:100%;border-radius:10px;">
+				    <img src="https://i.imgur.com/9pXZLzg.png" alt="Self-Healing Agent Loop" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>LLM-powered chatbot that detects its own errors and self-corrects using memory and planning.</li>
-				            <li>Used reflection prompts and error classification to trigger retries.</li>
+				            <li>Detected failures via self-reflection prompts.</li>
+				            <li>Retried with corrected context or tool usage.</li>
 				            <li>Logged interactions for auditing and fine-tuning.</li>
 				            <li>Integrated with Slack and web UI.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> LangChain, OpenAI, Vector Stores, Pinecone, LangSmith, LLM Reflection, Python, FastAPI.<br>
+				        <strong>Technologies Used:</strong> LangChain, OpenAI, Reflection, Pinecone, FastAPI, LangSmith.<br>
 				        <a href="https://github.com/yourusername/self-healing-agent" target="_blank">GitHub Repo</a>
 				    </p>
 				
 				    <h3 class="major">19- RAG-based Document Assistant</h3>
-				    <img src="https://images.unsplash.com/photo-1677442135189-96d9c8c5e81e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="RAG Assistant" style="width:100%;border-radius:10px;">
+				    <img src="https://i.imgur.com/2Z3vBdP.png" alt="RAG Architecture Diagram" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Built a Retrieval-Augmented Generation (RAG) system using LangChain and embeddings.</li>
-				            <li>Indexed PDFs, docs, and web pages for semantic search.</li>
-				            <li>Answered user queries with citations and source links.</li>
-				            <li>Used Chroma for vector storage and similarity search.</li>
+				            <li>Indexed documents using embeddings (OpenAI, Sentence Transformers).</li>
+				            <li>Retrieved relevant chunks via Chroma/FAISS.</li>
+				            <li>Generated answers with citations using LLMs.</li>
+				            <li>Supported PDFs, DOCX, and web pages.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> LangChain, OpenAI Embeddings, Chroma, FAISS, PDFMiner, HuggingFace, Streamlit, FastAPI.<br>
+				        <strong>Technologies Used:</strong> LangChain, Chroma, OpenAI, HuggingFace, PDFMiner, FastAPI.<br>
 				        <a href="https://github.com/yourusername/rag-document-assistant" target="_blank">GitHub Repo</a>
 				    </p>
 				
 				    <h3 class="major">20- LLM Agent with Tool Use</h3>
-				    <img src="https://images.unsplash.com/photo-1677442135198-7f25e5e4d3d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="LLM Tool Agent" style="width:100%;border-radius:10px;">
+				    <img src="https://langchain.readthedocs.io/en/latest/_images/agents_diagram.png" alt="LangChain Agent with Tools" style="width:100%;border-radius:10px;">
 				    <p>
 				        <ul style="margin:10px 0; padding-left:20px;">
-				            <li>Created an autonomous LLM agent capable of using external tools like search, math solvers, and file readers.</li>
-				            <li>Used LangChain to define tools and manage agent decision loops.</li>
-				            <li>Enabled dynamic planning and tool chaining for complex tasks.</li>
-				            <li>Tested on research, data analysis, and automation workflows.</li>
+				            <li>Agent used DuckDuckGo Search, Math Solver, FileReader, and Python REPL.</li>
+				            <li>Dynamic decision-making via LLM planning.</li>
+				            <li>Tool chaining for complex workflows (e.g., research → summarize → email).</li>
+				            <li>Evaluated on real-world automation tasks.</li>
 				        </ul>
-				        <strong>Technologies Used:</strong> LangChain, DuckDuckGo Search, Wolfram Alpha API, Python REPL, FileReader, SerpAPI, OpenAI.<br>
+				        <strong>Technologies Used:</strong> LangChain, OpenAI, SerpAPI, Wolfram Alpha, Python REPL.<br>
 				        <a href="https://github.com/yourusername/langchain-tool-agent" target="_blank">GitHub Repo</a>
 				    </p>
 				</article>
@@ -382,6 +382,7 @@
 
 	</body>
 </html>
+
 
 
 
